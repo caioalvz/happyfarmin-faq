@@ -1,119 +1,124 @@
+/* Import the Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;600&display=swap');
 
+/* Define the primary color */
 :root {
-    --primary-color: green;
+  --primary-color: green;
 }
 
+/* Apply global styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Noto Sans', sans-serif;
-    background-color: #f2f2f2;
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    margin: 0.5rem;
-    letter-spacing: 1px;
-  }
-  
-  main {
-    max-width: 500px;
-    margin: 1rem auto;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    margin: 1rem;
-    color: var(--primary-color);
-    font-weight: 500;
-    letter-spacing: 1px;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  p {
-    margin: 1rem;
-  }
+/* Define the body styles */
+body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #f2f2f2;
+}
 
-  .link {
-    color: var(--primary-color);
-  }
-  
-  .footer {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+/* Define the header styles */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
 
-  .accordion-item {
-    margin-bottom: 0.5rem;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .accordion-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-radius: 30px;
-    padding: 20px;
-    font-size: 1.2rem;
-    color: #333;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .accordion-header:hover {
-    background-color: #e6e6e6;
-    border-radius: 30px;
-  }
-  
-  .accordion-header::after {
-    content: "\002B";
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #555;
-    transition: transform 0.2s ease-in-out;
-    border-radius: 30px;
-  }
-  
-  .active .accordion-header::after {
-    content: "\2212";
-    transform: rotate(180deg);
-  }
-  
-  .accordion-content {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.5rem;
-    transition: max-height 0.3s ease-in-out;
-    max-height: 0;
-    overflow: hidden;
-    border-radius: 30px;
-  }
-  
-  .active .accordion-content {
-    max-height: 500px;
-    transition: max-height 0.5s ease-in-out;
-  }
-  
+/* Define the heading styles */
+h1, h2 {
+  font-size: 2rem;
+  margin: 0.5rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Define the main content styles */
+main {
+  max-width: 500px;
+  margin: 1rem auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 1rem;
+}
+
+.link {
+  color: var(--primary-color);
+}
+
+/* Define the footer styles */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Define the accordion styles */
+.accordion-item {
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.accordion-header:hover {
+  background-color: #e6e6e6;
+  border-radius: 30px;
+}
+
+.accordion-header::after {
+  content: "\002B";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 30px;
+}
+
+.active .accordion-header::after {
+  content: "\2212";
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5rem;
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.active .accordion-content {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out;
+}
